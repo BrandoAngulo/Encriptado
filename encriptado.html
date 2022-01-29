@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptado de Palabras</title>
+
+    <!-- Google Fonts-->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as="font" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- Preload y hoja de estilos -->
+    <link rel="preload" href="css/style.css" as="style" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <!-- <div class="contenedor"> -->
+        <div class="barra">
+            <a href="ensayoChallenge.html">
+                <h1 class="Logo_nombre">Cifrado de Palabras</h1>
+            </a>
+        </div>
+        <!--  </div> -->
+    </header>
+    <div class="contenedor contenido__principal">
+        <main class="cifrado centrar-texto">
+
+            <!-- encriptado -->
+            <article class="entrada">
+                <div class="entrada__encriptado">
+                    <h3 class="cifrado__titulo">Encriptar Palabras</h2>
+                        <input class="input" id="encrip" type="text" placeholder="Digita tu Frase" />
+                        <button id="encriptar" class="boton">Encriptar</button>
+                </div>
+            </article>
+            <!-- Desencriptado -->
+            <article class="entrada">
+                <div class="entrada__desencriptar">
+                    <h3 class="cifrado__titulo">Desencriptar Palabras</h3>
+                    <input class="input" id="desencrip" type="text" placeholder="Digita tu Frase" />
+                    <button id="desencriptar" class="boton">Desencriptar</button>
+                </div>
+            </article>
+            <article class="texto">
+                <textarea id="textArea" class="textarea" readonly="readonly"></textarea>
+            </article>
+            <div class="boton__texto">
+                <button id="btn" class="boton__copiar">Copiar Texto</button>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <!-- <div class="contenedor"> -->
+        <div class="barra">
+            <a href="ensayoChallenge.html">
+                <h1 class="Logo_nombre">Dev Brando Angulo <span>® </span></h1>
+            </a>
+        </div>
+        <!-- </div> -->
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
